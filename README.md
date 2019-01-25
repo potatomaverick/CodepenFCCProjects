@@ -1,2 +1,2 @@
 # CodepenFCCProjects
-FCC Projects done on Codepen.io
+FreeCodeCamp Projects done on Codepen.io
