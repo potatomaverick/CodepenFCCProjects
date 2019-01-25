@@ -1,0 +1,32 @@
+body{
+  text-align: center;
+  background-color: #edeae0;
+}
+
+#main{
+  font-family: Hind Madurai, sans-serif;
+  font-size: 20px;
+  
+}
+#title{
+  margin: 20px;
+  
+}
+#image{
+  display: block;
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+}
+#img-caption{
+  font-size: 14px;
+}
+#accomplishments{
+  font-size: 18px;
+  text-align: left;
+  padding: 25px;
+}
+ul{
+  max-width: 500px;
+  margin: 0 auto;
+}
