@@ -24,14 +24,13 @@ Survey Form
 Description of Survey Form   
 </p>
 <form id="survey-form">
-  <label id="name-label">Name:</label>
-  <input id="name" name="name" type=text placeholder="Enter name here" required>
-  
+    <label id="name-label">Name:</label>
+    <input id="name" name="name" type=text placeholder="Enter name here" required>
   <label id="email-label">Email:</label>
   <input id="email" name="email" type=email placeholder="Enter email here" required>
   
   <label id="number-label">Age:</label>
-  <input id="number" name="age" type=number placeholder="Enter age here" required>
+  <input id="number" name="age" type=number placeholder="Enter age here" min="0" max="122" required>
   
   <label id="dropdown-label">Dropdown List</label>
   <select id="dropdown">
@@ -69,6 +68,9 @@ Description of Survey Form
   
   <textarea placeholder="Write additional comments here">
   </textarea>
+  
+  <button id="submit">Submit</button>
+  
   </form>
   
 </div>
