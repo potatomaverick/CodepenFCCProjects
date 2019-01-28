@@ -19,57 +19,69 @@
 <h1 id="title">
 Survey Form
 </h1>
-<div id="form-layout">
- <p id="description">
+<p id="description">
 Description of Survey Form   
 </p>
+<div id="form-layout">
+
 <form id="survey-form">
-    <label id="name-label">Name:</label>
-    <input id="name" name="name" type=text placeholder="Enter name here" required>
-  <label id="email-label">Email:</label>
-  <input id="email" name="email" type=email placeholder="Enter email here" required>
   
-  <label id="number-label">Age:</label>
-  <input id="number" name="age" type=number placeholder="Enter age here" min="0" max="122" required>
+  <label id="name-label" class="labels">Name:</label>
+  <input id="name" class="answer-fields" name="name" type=text placeholder="Enter name here" required>
   
-  <label id="dropdown-label">Dropdown List</label>
-  <select id="dropdown">
+  <label id="email-label" class="labels">Email:</label>
+  <input id="email" class="answer-fields" name="email" type=email placeholder="Enter email here" required>
+  
+  <label id="number-label" class="labels">Age:</label>
+  <input id="number" class="answer-fields" name="age" type=number placeholder="Enter age here" min="0" max="122" required>
+
+  <label id="dropdown-label" class="labels">Dropdown List:</label>
+  <select id="dropdown" class="answer-fields">
     <option value="hi">Hi</option>
     <option value="hello">Hello</option>
     <option value="aloha">Aloha</option>
     <option value="hola">Hola</option>
   </select>
-
-  <label for="radio1">
-    <input id="radio1" type="radio" name="radio-choices" value="1">1
+  
+  <label id=radio-label for="radio-buttons" class="labels">Radio Choices:</label>
+  <div id=radio-answers class="answer-fields">
+  <label>
+   <input id="radio1" type="radio" name="radio-choices" value="1">1
   </label>
-  <label for="radio2">
-    <input id="radio2" type="radio" name="radio-choices" value="2">2
+  <label class="answer-fields">
+   <input id="radio2" type="radio" name="radio-choices" value="2">2
   </label>
-  <label for="radio3">
+  <label class="answer-fields">
    <input id="radio3" type="radio" name="radio-choices" value="3">3
   </label>
-  <label for="radio4">
+  <label class="answer-fields">
    <input id="radio4" type="radio" name="radio-choices" value="4">4
   </label>
+  </div>
   
-  <label for="checkboxA">
+  <label id=checkbox-label class="labels">Checkbox:</label>
+  <div id=checkbox-answers class="answer-fields">
+  <label>
     <input type="checkbox" name="checkboxes" value="A">A
   </label>
-  <label for="checkboxB">
+  <label>
     <input type="checkbox" name="checkboxes" value="B">B
   </label>
-  <label for="checkboxC">
+  <label>
     <input type="checkbox" name="checkboxes" value="C">C
   </label>
-  <label for="checkboxD">
+  <label>
     <input type="checkbox" name="checkboxes" value="D">D
   </label>
+  </div>
   
-  <textarea placeholder="Write additional comments here">
-  </textarea>
+  <div id=additional-comments class="answer-fields">
+  <textarea placeholder="Write additional comments here"></textarea>
+  </div>
   
+  <div id="submit-button">
   <button id="submit">Submit</button>
+  </div>
   
   </form>
   
