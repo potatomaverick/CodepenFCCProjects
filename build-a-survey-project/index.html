@@ -17,14 +17,14 @@
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <h1 id="title">
-Survey Form
+Doctor Who Survey
 </h1>
 <p id="description">
-Description of Survey Form   
+Tell us your favorites and what you'd like to see next!  
 </p>
 <div id="form-layout">
 
-<form id="survey-form">
+<form id="survey-form" class="border">
   
   <label id="name-label" class="labels">Name:</label>
   <input id="name" class="answer-fields" name="name" type=text placeholder="Enter name here" required>
@@ -35,44 +35,49 @@ Description of Survey Form
   <label id="number-label" class="labels">Age:</label>
   <input id="number" class="answer-fields" name="age" type=number placeholder="Enter age here" min="0" max="122" required>
 
-  <label id="dropdown-label" class="labels">Dropdown List:</label>
+  <label id="dropdown-label" class="labels">Who is your favorite modern era Doctor?</label>
   <select id="dropdown" class="answer-fields">
-    <option value="hi">Hi</option>
-    <option value="hello">Hello</option>
-    <option value="aloha">Aloha</option>
-    <option value="hola">Hola</option>
+    <option value="Christopher Eccleston">Christopher Eccleston</option>
+    <option value="David Tennant">David Tennant</option>
+    <option value="Matt Smith">Matt Smith</option>
+    <option value="Peter Capaldi">Peter Capaldi</option>
+    <option value="Jodie Whittaker">Jodie Whittaker</option>
   </select>
   
-  <label id=radio-label for="radio-buttons" class="labels">Radio Choices:</label>
+  <label id=radio-label for="radio-buttons" class="labels">Which is your favorite Who villian?</label>
   <div id=radio-answers class="answer-fields">
   <label>
-   <input id="radio1" type="radio" name="radio-choices" value="1">1
-  </label>
+   <input id="radio1" type="radio" name="radio-choices" value="daleks">Daleks
+  </label><br>
   <label class="answer-fields">
-   <input id="radio2" type="radio" name="radio-choices" value="2">2
-  </label>
+   <input id="radio2" type="radio" name="radio-choices" value="cybermen">Cybermen
+  </label><br>
   <label class="answer-fields">
-   <input id="radio3" type="radio" name="radio-choices" value="3">3
-  </label>
+   <input id="radio3" type="radio" name="radio-choices" value="weeping angels">Weeping Angels
+  </label><br>
   <label class="answer-fields">
-   <input id="radio4" type="radio" name="radio-choices" value="4">4
+   <input id="radio4" type="radio" name="radio-choices" value="the master">The Master
+  </label><br>
+  <label class="answer-fields">
+   <input id="radio5" type="radio" name="radio-choices" value="other">Other (comment below!)
   </label>
+    <br>
   </div>
   
-  <label id=checkbox-label class="labels">Checkbox:</label>
+  <label id=checkbox-label class="labels">What would you like to see more of next season? (select all that apply)</label>
   <div id=checkbox-answers class="answer-fields">
   <label>
-    <input type="checkbox" name="checkboxes" value="A">A
-  </label>
+    <input type="checkbox" name="checkboxes" value="villians">More recurring villians
+  </label><br>
   <label>
-    <input type="checkbox" name="checkboxes" value="B">B
-  </label>
+    <input type="checkbox" name="checkboxes" value="history">More historical locations/times
+  </label><br>
   <label>
-    <input type="checkbox" name="checkboxes" value="C">C
-  </label>
+    <input type="checkbox" name="checkboxes" value="scifi">More sci-fi oriented settings
+  </label><br>
   <label>
-    <input type="checkbox" name="checkboxes" value="D">D
-  </label>
+    <input type="checkbox" name="checkboxes" value="other">Other (comment below!)
+  </label><br>
   </div>
   
   <div id=additional-comments class="answer-fields">

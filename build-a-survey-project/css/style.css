@@ -1,5 +1,7 @@
 body{
   font-family: arial, sans-serif;
+  color: white;
+  background-color: rgb(0, 0, 153);
 }
 
 #title{
@@ -13,25 +15,34 @@ body{
 #survey-form{
   display: grid;
   grid-template-rows: repeat(8, 1fr);
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "label1 answer1 picture1"
-    "label2 answer2 ."
-    "label3 answer3 picture2"
-    "label4 answer4 ."
-    "label5 answer5 picture3"
-    "label6 answer6 ."
-    ". comments ."
-    ". submit ."
+    "label1 answer1"
+    "label2 answer2"
+    "label3 answer3"
+    "label4 answer4"
+    "label5 answer5"
+    "label6 answer6"
+    ". comments"
+    ". submit"
     
+}
+
+.border{
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .labels{
   justify-self: end;
+  align-self: center;
+  padding-right: 75px;
 }
 
 .answer-fields{
-  justify-self: center;
+  justify-self: left;
+  align-self: center;
 }
 
 #name-label{
@@ -39,41 +50,54 @@ body{
 }
 #name{
   grid-area: answer1;
+  width: 50%;
+  max-width: 400px;
 }
 #email-label{
   grid-area: label2;
 }
 #email{
   grid-area: answer2;
+  width: 50%;
+  maxwidth: 400px;
 }
 #number-label{
   grid-area: label3;
 }
 #number{
   grid-area: answer3;
+  width: 20%;
 }
 #dropdown-label{
   grid-area: label4;
 }
 #dropdown{
   grid-area: answer4;
+  width: 25%;
 }
 #radio-label{
   grid-area: label5;
 }
 #radio-answers{
   grid-area: answer5;
+  margin: 10px;
 }
 #checkbox-label{
   grid-area: label6;
 }
 #checkbox-answers{
   grid-area: answer6;
+  padding: 10px;
+}
+textarea{
+  width: 400px;
+  height: 100px;
 }
 #additional-comments{
   grid-area:comments;
+  
 }
 #submit-button{
   grid-area: submit;
-  justify-self: center;
+  justify-self: start;
 }
