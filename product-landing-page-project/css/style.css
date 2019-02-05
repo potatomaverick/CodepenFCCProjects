@@ -1,28 +1,32 @@
 @media (max-width: 600px) {
-  #nav-bar a{
-    float: none;
-    width: 100%;
-  }
+   
 }
 
 #header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   background-color: teal;
   margin: 5px;
   padding: 5px;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 #header-img{
-  width: 15%;
+  width: 10%;
+  height: auto;
   align-self: flex-end;
 }
 
 #nav-bar{
-  position: relative;
-  padding: 5px;
-  color: white
+  padding-top: 100px;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .nav-link{
@@ -34,6 +38,21 @@
     color: orange;
 }
 
-#form{}
+#email-submit-text{
+  padding-top: 150px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+}
 #email{}
 #video{}
