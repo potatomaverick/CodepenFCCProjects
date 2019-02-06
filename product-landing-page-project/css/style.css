@@ -1,5 +1,14 @@
 @media (max-width: 600px) {
-   
+  #header{
+  display: flex;
+  flex-direction: column;
+  }
+  #header-img{
+    width: 50%
+  }
+  #nav-bar{
+    word-wrap: break-word;
+  }
 }
 
 #header{
