@@ -3,17 +3,59 @@ section{
 }
 
 header{
+  font-size: 20px;
+  
+}
+
+#navbar{
+  height: auto;
+  width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding: 35px 5px 10px 5px;
+  margin-top: 15px;
+  background-color: #D0CACA;
+  line-height: 400%;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+#navbar-header{
+  text-align: center;
   
 }
 
 #main-doc{
-  
+  padding-left: 250px;
 }
 
 .nav-link{
-  
+  padding: 6px 8px 6px 16px;
+  font-size: 25px;
+  display: block;
 }
 
 .main-section{
   
+}
+
+@media (max-width: 600px){
+  #navbar {
+    padding-top: 15px;
+    margin-left: 5px;
+    width: auto;
+  }
+  
+  #main-doc{
+    padding-left: 165px
+  }
+  
+  header {font-size: 12px}
+  
+  .nav-link{font-size: 16px}
 }
