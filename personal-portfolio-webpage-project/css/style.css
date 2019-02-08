@@ -1,0 +1,34 @@
+body{
+  background-color: #F0F8FF;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* CSS for elements */
+#navbar{
+  /* Navbar should be fixed at top of viewport */
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  margin: 5px;
+  
+  /* Arrange in top right corner, horizontally */
+}
+
+#welcome-section{
+  /* height should be size of the viewport */
+}
+
+#projects{
+
+}
+
+/* CSS for classes */
+.project-tile{
+  /* style for project tiles displayed in projects area */
+}
+
+/*Media Query */
+@media {
+  
+}
+
