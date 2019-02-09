@@ -1,6 +1,6 @@
 body{
-  background-color: #F0F8FF;
-  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #F0FFFF;
+  font-family: 'Arimo', sans-serif;
 }
 
 /* CSS for elements */
@@ -9,7 +9,8 @@ body{
   display: flex;
   justify-content: flex-end;
   padding: 15px;
-  margin: 5px;
+  background-color: #FFEBCD;
+  
   
   /* Arrange in top right corner, horizontally */
 }
