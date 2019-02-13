@@ -1,3 +1,8 @@
+@media screen and (max-width: 600px) {
+
+}
+
+
 body{
   font-family: arial, sans-serif;
   color: white;
@@ -28,16 +33,11 @@ body{
     
 }
 
-.border{
-  border-color: white;
-  border-width: 2px;
-  border-style: solid;
-}
-
 .labels{
   justify-self: end;
   align-self: center;
   padding-right: 75px;
+  word-wrap: normal;
 }
 
 .answer-fields{
@@ -90,8 +90,9 @@ body{
   padding: 10px;
 }
 textarea{
-  width: 400px;
+  width: 250px;
   height: 100px;
+  resize: none;
 }
 #additional-comments{
   grid-area:comments;
@@ -101,3 +102,4 @@ textarea{
   grid-area: submit;
   justify-self: start;
 }
+
